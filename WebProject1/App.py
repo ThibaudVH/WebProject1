@@ -8,7 +8,7 @@ from okta import UsersClient
 # typically __name__ when using a single module.
 app = Flask(__name__)
 app.debug = True
-app.config["OIDC_CLIENT_SECRETS"] = "client_secrets.json"
+app.config["OIDC_CLIENT_SECRETS"] = "exclude/client_secrets.json"
 app.config["OIDC_COOKIE_SECURE"] = False
 #allows you to test out user login and registration in development without using SSL. If you were going to run your site publicly, you would remove this option and use SSL on your site.
 app.config["OIDC_CALLBACK_ROUTE"] = "/oidc/callback"

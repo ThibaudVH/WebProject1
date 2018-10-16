@@ -35,9 +35,10 @@
     <Content Include="templates\dashboard.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\layout.html" />
-    <Content Include="client_secrets.json" />
+    <Content Include="exclude\client_secrets.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="exclude\" />
     <Folder Include="static\" />
     <Folder Include="templates\" />
   </ItemGroup>
